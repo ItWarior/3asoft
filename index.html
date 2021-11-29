@@ -1,0 +1,31 @@
+
+
+<!--Тестове завдання:-->
+<!--Є кнопка. За її допомогою завантажити вибрані фото з комп’ютера і відобразити їх (з назвою фото). Фото мають залишатись при перезавантаженні сторінки. При повторному виборі фото, вони мають додаватись до існуючих. Також мати функціонал, щоб можна було видалити окремо кожну фотографію. Зробити анімацію (спочатку закреслюється назва фото і потім фото видаляється). Стилізація на власний розсуд, але хороше оформлення вітається-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="content">
+    <div id="card">
+        <h1>List of images</h1>
+        <div id="header">
+            <input hidden type="file" name="file" id="input-file" multiple accept="image/*">
+            <button id="add-file-btn">Open to save</button>
+        </div>
+        <div id="images"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

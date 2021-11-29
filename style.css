@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightsteelblue;
+}
+
+#content {
+    padding-top: 50px;
+    width: 814px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#card {
+    background: linear-gradient(to bottom right, #ff9201, #83ddc6);
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 20px #483fe7;
+}
+
+#add-file-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #8fd6b4;
+    border: 2px solid;
+    font-weight: bold;
+
+}
+
+#add-file-btn:hover {
+    box-shadow: 1px 1px 5px #483fe7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add-file-btn:active {
+    background-color: #b925e1;
+    transition: 0.1s;
+    width: calc(100px - 1px);
+    font-weight: revert;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagesBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.img-block {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.img-block.removed {
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+
+.img-block:hover .removeSymbol {
+    opacity: 1;
+}
+
+.img-block:hover .nameImg {
+    opacity: 0.8;
+    bottom: 0;
+}
+
+.removeSymbol {
+    font-weight: 900;
+    background: #b925e1;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.removeSymbol:active{
+    color: red;
+}
+
+.nameImg {
+    font-weight: 900;
+    background: rgba(185, 37, 225, 0.62);
+    left: 0;
+    right: 0;
+    height: 25px;
+    position: absolute;
+    bottom: -30px;
+    text-align: left;
+    opacity: 0;
+    margin: 5px 5px 4px 5px;
+    transition: 0.3s;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.name{
+    color: black;
+    transition: 0.5s;
+}
+
+.delete{
+    color: red;
+    text-decoration-line: line-through;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
